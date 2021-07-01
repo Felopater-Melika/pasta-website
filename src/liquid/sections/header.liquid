@@ -1,1 +1,21 @@
-{% render 'header' %}
+{% render 'header' with  {
+  settings: section.settings
+}%}
+
+{% schema %}
+  {
+    "name": "Navigation",
+    "settings": [
+      {
+        "type": "header",
+        "content": "City name"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero",
+        "category": "Image w/ text"
+      }
+    ]
+  }
+{% endschema %}
