@@ -14,13 +14,13 @@ nav {
         display: grid;
         grid-auto-flow: column;
         grid-column-gap: 25px;
-        transform: translate(95px, -30px);
+        background-color: purple;
         .link {
             text-decoration: none;
             color: white;
             font-size: 14px;
             font-weight: 400;
-            font-family: USALight, sans-serif;
+            font-family: Serifa, sans-serif;
         }
     }
     .logos {
