@@ -1,0 +1,24 @@
+{% comment %} requires the following arguments: -settings {% endcomment %}
+
+<nav>
+    <div class="links">
+        <a class="link" href="{{ settings.first_link }}">{{ settings.first_link_text }}</a>
+        <div class="drop">
+            <a class="link menu" href="{{ settings.second_link }}">{{ settings.second_link_text }}</a>
+            <div class="dropdown">
+                <a class="link cook-at-home" href="{{ settings.third_link_dropdown }}https://www.catapanopasta.com/cook-at-home">{{ settings.third_link_text_dropdown }}COOK AT HOME</a>
+            </div>
+        </div>
+        <div class="drop">
+            <a class="link about" href="{{ settings.fourth_link }}https://www.catapanopasta.com/about">{{ settings.fourth_link_text }}ABOUT</a>
+            <div class="dropdown">
+                <a class="link news" href="{{ settings.fifth_link_dropdown }}https://www.catapanopasta.com/news">{{ settings.fifth_link_text_dropdown }}NEWS</a>
+            </div>
+        </div>
+        <a class="link" href="{{ settings.sixth_link }}https://www.catapanopasta.com/contact">{{ settings.sixth_link_text }}CONTACT</a>
+    </div>
+    <div class="logos">
+        <div class="store-logo">Catapano Pasta Co </div>
+        <div class="city-logo">Nashville</div>
+    </div>
+</nav>

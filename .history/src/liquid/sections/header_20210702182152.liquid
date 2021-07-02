@@ -1,0 +1,57 @@
+{% render 'header' with  {
+  settings: section.settings
+}%}
+
+{% schema %}
+  {
+    "name": "Navigation",
+    "settings": [
+      {
+        "type": "url",
+        "id": "first_link",
+        "label": "First Link"
+      },
+      {
+        "type": "text",
+        "id": "first_link_text",
+        "label": "First Link Text"
+      },
+      {
+        "type": "url",
+        "id": "second_link",
+        "label": "Second Link"
+      },
+      {
+        "type": "text",
+        "id": "second_link_text",
+        "label": "Second Link Text"
+      },
+      {
+        "type": "url",
+        "id": "first_link",
+        "label": "First Link"
+      },
+      {
+        "type": "text",
+        "id": "first_link_text",
+        "label": "First Link Text"
+      },
+      {
+        "type": "url",
+        "id": "first_link",
+        "label": "First Link"
+      },
+      {
+        "type": "text",
+        "id": "first_link_text",
+        "label": "First Link Text"
+      },
+    ],
+    "presets": [
+      {
+        "name": "Hero",
+        "category": "Image w/ text"
+      }
+    ]
+  }
+{% endschema %}
