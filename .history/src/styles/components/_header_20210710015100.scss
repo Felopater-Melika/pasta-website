@@ -165,8 +165,17 @@ ul.is-active {
                 span {
                     display: none;
                 }
-                .news {
-                    left: 80px;
+            }
+            drop {
+                .dropdownn {
+                    display: none;
+                    position: absolute;
+                    top: 40px;
+                    z-index: 1;
+                    min-width: 160px;
+                    a {
+                        display: block;
+                    }
                 }
             }
             .hidden {
