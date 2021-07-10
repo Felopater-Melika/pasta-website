@@ -1,0 +1,225 @@
+@import url(//db.onlinewebfonts.com/c/6fcade7abbedc0b15b45d46f0b8eca84?family=CoquetteW00-Light);
+@import url(//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold);
+@import url(//db.onlinewebfonts.com/c/8e0a11eae887cf86084e98eb1dba2fc4?family=USALight);
+@import url(//db.onlinewebfonts.com/c/9ae5e19516bc6428f1327ff3311b2617?family=DINNextW01-Light);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #000;
+    width: 100%;
+    height: 140px;
+    position: relative;
+    ul {
+        display: none;
+        z-index: 1;
+        list-style: none;
+        position: absolute;
+        background-color: #000;
+        height: 100vh;
+        width: 100vw;
+        li {
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: DINNextW01-Light, sans-serif;
+            }
+            a:active {
+                color: gray;
+            }
+            .show {
+                color: white;
+                margin-right: 7px;
+                cursor: pointer;
+            }
+        }
+        .hide {
+            display: none;
+        }
+    }
+    .logos {
+        .logo1 {
+            position: absolute;
+            width: 100%;
+            top: 90px;
+            color: #424242;
+            font-family: CoquetteW00-Light, sans-serif;
+            font-size: 29px;
+            text-align: center;
+        }
+        .logo2 {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            color: #e5e5e5;
+            font-family: LuloCleanW01-OneBold, sans-serif;
+            letter-spacing: 0.05em;
+            font-size: 19px;
+        }
+    }
+    .hamburger {
+        z-index: 1;
+        position: relative;
+        left: 80%;
+        top: 10px;
+        display: block;
+        width: 25px;
+        height: 35px;
+        cursor: pointer;
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+    }
+}
+
+.bar,
+.hamburger:after,
+.hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: translate(-50%, -50%) translateY(10px) rotate(45deg);
+}
+
+.hamburger.is-active:after {
+    transform: translate(-50%, -50%) translateY(-10px) rotate(-45deg);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+ul.is-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 80px;
+    li {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    //     nav {
+    //         background-color: black;
+    //         width: 100%;
+    //         height: 140px;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: space-around;
+    //         .links {
+    //             display: grid;
+    //             grid-auto-flow: column;
+    //             grid-column-gap: 25px;
+    //             transform: translate(95px, -30px);
+    //             .link {
+    //                 text-decoration: none;
+    //                 color: white;
+    //                 font-size: 14px;
+    //                 font-weight: 400;
+    //                 font-family: USALight, sans-serif;
+    //             }
+    //             .drop {
+    //                 .dropdown {
+    //                     display: none;
+    //                     position: absolute;
+    //                     padding-top: 20px;
+    //                     z-index: 1;
+    //                     min-width: 160px;
+    //                     a {
+    //                         display: block;
+    //                     }
+    //                 }
+    //             }
+    //             .drop:hover .dropdown {
+    //                 display: block;
+    //             }
+    //         }
+    //         .logos {
+    //             padding-top: 20px;
+    //             padding-right: 240px;
+    //             padding-bottom: 20px;
+    //             .store-logo {
+    //                 color: #424242;
+    //                 font-family: CoquetteW00-Light, sans-serif;
+    //                 font-weight: 400;
+    //                 font-size: 44px;
+    //             }
+    //             .city-logo {
+    //                 color: #e5e5e5;
+    //                 font-family: LuloCleanW01-OneBold, sans-serif;
+    //                 font-size: 20px;
+    //                 font-weight: 400;
+    //                 transform: translate(150px, -30px);
+    //             }
+    //         }
+    //     }
+    //     nav {
+    //         background-color: black;
+    //         width: 100%;
+    //         height: 140px;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: space-around;
+    //         .links {
+    //             display: grid;
+    //             grid-auto-flow: column;
+    //             grid-column-gap: 25px;
+    //             transform: translate(95px, -30px);
+    //             .link {
+    //                 text-decoration: none;
+    //                 color: white;
+    //                 font-size: 14px;
+    //                 font-weight: 400;
+    //                 font-family: USALight, sans-serif;
+    //             }
+    //             .drop {
+    //                 .dropdown {
+    //                     display: none;
+    //                     position: absolute;
+    //                     padding-top: 20px;
+    //                     z-index: 1;
+    //                     min-width: 160px;
+    //                     a {
+    //                         display: block;
+    //                     }
+    //                 }
+    //             }
+    //             .drop:hover .dropdown {
+    //                 display: block;
+    //             }
+    //         }
+    //         .logos {
+    //             padding-top: 20px;
+    //             padding-right: 240px;
+    //             padding-bottom: 20px;
+    //             .store-logo {
+    //                 color: #424242;
+    //                 font-family: CoquetteW00-Light, sans-serif;
+    //                 font-weight: 400;
+    //                 font-size: 44px;
+    //             }
+    //             .city-logo {
+    //                 color: #e5e5e5;
+    //                 font-family: LuloCleanW01-OneBold, sans-serif;
+    //                 font-size: 20px;
+    //                 font-weight: 400;
+    //                 transform: translate(150px, -30px);
+    //             }
+    //         }
+    //     }
+}

@@ -1,0 +1,120 @@
+@import url(//db.onlinewebfonts.com/c/6fcade7abbedc0b15b45d46f0b8eca84?family=CoquetteW00-Light);
+@import url(//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold);
+@import url(//db.onlinewebfonts.com/c/8e0a11eae887cf86084e98eb1dba2fc4?family=USALight);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .links {
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 25px;
+        transform: translate(95px, -30px);
+        .link {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: USALight, sans-serif;
+        }
+        .drop {
+            .dropdown {
+                display: none;
+                position: absolute;
+                padding-top: 20px;
+                z-index: 1;
+                min-width: 160px;
+                a {
+                    display: block;
+                }
+            }
+        }
+        .drop:hover .dropdown {
+            display: block;
+        }
+    }
+    .logos {
+        padding-top: 20px;
+        padding-right: 240px;
+        padding-bottom: 20px;
+        .store-logo {
+            color: #424242;
+            font-family: CoquetteW00-Light, sans-serif;
+            font-weight: 400;
+            font-size: 44px;
+        }
+        .city-logo {
+            color: #e5e5e5;
+            font-family: LuloCleanW01-OneBold, sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            transform: translate(150px, -30px);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        .links {
+            display: none;
+        }
+        .logos {
+            position: relative;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            .store-logo {
+                font-size: 29px;
+                width: 100%;
+                position: absolute;
+                top: 67%;
+                text-align: center;
+            }
+            .city-logo {
+                position: absolute;
+                right: 90%;
+                bottom: 27%;
+                letter-spacing: 0.05em;
+                font-size: 19px;
+            }
+        }
+        .toggle {
+            z-index: 1;
+            height: 50px;
+            width: 50px;
+            transform: translate(-7px, -2px);
+            span {
+                display: block;
+                width: 21px;
+                height: 3px;
+                background: white;
+                transition: 0.15s;
+            }
+            span:nth-child(1) {
+                transform: translateY(-5px);
+            }
+            span:nth-child(3) {
+                transform: translateY(5px);
+            }
+        }
+    }
+    .toggle.active span:nth-child(1) {
+        transform: translateY(-50%) rotate(45deg);
+    }
+    .toggle.active span:nth-child(2) {
+        transition-delay: 0.1s;
+        opacity: 0;
+    }
+    .toggle.active span:nth-child(3) {
+        transform: translateY(50%) rotate(-45deg);
+    }
+}

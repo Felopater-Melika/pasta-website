@@ -1,0 +1,21 @@
+{% comment %} requires the following arguments: -settings {% endcomment %}
+
+<nav>
+
+    <ul class="links">
+        <div class="overlay"></div>
+        <li><a class="link" href="{{ settings.first_link }}">{{ settings.first_link_text }}</a></li>
+        <li><span class="show">+  </span> <a class="link menu" href="{{ settings.second_link }}">{{ settings.second_link_text }}</a></li>
+        <li class="hidden hide"><a class="link cook-at-home" href="{{ settings.third_link_dropdown }}">{{ settings.third_link_text_dropdown }}</a></li>
+        <li> <span class="show">+  </span><a class="link about" href="{{ settings.fourth_link }}">{{ settings.fourth_link_text }}</a></li>
+        <li class="hidden hide"><a class="link news" href="{{ settings.fifth_link_dropdown }}">{{ settings.fifth_link_text_dropdown }}</a></li>
+        <li> <a class="link" href="{{ settings.sixth_link }}">{{ settings.sixth_link_text }}</a></li>
+    </ul>
+    <div class="logos">
+        <div class="logo1">{{ settings.store_logo }}</div>
+        <div class="logo2">{{ settings.city }}</div>
+    </div>
+    <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+</nav>

@@ -1,0 +1,197 @@
+@import url(//db.onlinewebfonts.com/c/6fcade7abbedc0b15b45d46f0b8eca84?family=CoquetteW00-Light);
+@import url(//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold);
+@import url(//db.onlinewebfonts.com/c/8e0a11eae887cf86084e98eb1dba2fc4?family=USALight);
+@import url(//db.onlinewebfonts.com/c/9ae5e19516bc6428f1327ff3311b2617?family=DINNextW01-Light);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #000;
+    width: 100%;
+    height: 140px;
+    position: relative;
+    ul {
+        display: none;
+        z-index: 1;
+        list-style: none;
+        position: absolute;
+        transition: 1;
+        background-color: #000;
+        opacity: 0;
+        height: 100vh;
+        width: 100vw;
+        li {
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                font-weight: 400;
+                font-family: DINNextW01-Light, sans-serif;
+            }
+            a:active {
+                color: gray;
+            }
+            .show {
+                color: white;
+                margin-right: 7px;
+                cursor: pointer;
+            }
+        }
+        .hide {
+            display: none;
+        }
+    }
+    .logos {
+        .logo1 {
+            position: absolute;
+            width: 100%;
+            top: 90px;
+            color: #424242;
+            font-family: CoquetteW00-Light, sans-serif;
+            font-size: 29px;
+            text-align: center;
+        }
+        .logo2 {
+            position: absolute;
+            top: 30%;
+            left: 3%;
+            color: #e5e5e5;
+            font-family: LuloCleanW01-OneBold, sans-serif;
+            letter-spacing: 0.05em;
+            font-size: 19px;
+        }
+    }
+    .hamburger {
+        z-index: 1;
+        position: relative;
+        left: 83%;
+        top: 23px;
+        display: block;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+    }
+}
+
+.bar,
+.hamburger:after,
+.hamburger:before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.1s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hamburger:before {
+    transform: translate(-50%, -50%) translateY(-8px);
+}
+
+.hamburger:after {
+    transform: translate(-50%, -50%) translateY(8px);
+}
+
+.hamburger.is-active:before {
+    transform: translate(-50%, -50%) rotate(45deg)
+}
+
+.hamburger.is-active:after {
+    transform: translate(-50%, -50%) rotate(-45deg)
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+// .hamburger.is-active:before {
+//     transition-delay: 1s;
+//     transform: rotate(45deg);
+// }
+// .hamburger.is-active:after {
+//     transition-delay: 1s;
+//     transform: rotate(-45deg);
+// }
+ul.is-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 1;
+    padding-top: 80px;
+    li {
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        .hamburger {
+            display: none;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: absolute;
+            top: 27%;
+            left: 17%;
+            width: 330px;
+            height: 30px;
+            opacity: 1;
+            li {
+                a {
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: USALight, sans-serif;
+                }
+                span {
+                    display: none;
+                }
+            }
+            .hidden {
+                position: absolute;
+                padding-top: 20px;
+                z-index: 1;
+                min-width: 160px;
+                a {
+                    display: block;
+                }
+            }
+        }
+        .logos {
+            .logo1 {
+                color: #424242;
+                font-family: CoquetteW00-Light, sans-serif;
+                font-weight: 400;
+                font-size: 44px;
+                width: 370px;
+                text-align: start;
+                position: absolute;
+                top: 20%;
+            }
+            .logo2 {
+                color: #e5e5e5;
+                font-family: LuloCleanW01-OneBold, sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                position: absolute;
+                top: 35%;
+                left: 60%;
+            }
+        }
+    }
+}
