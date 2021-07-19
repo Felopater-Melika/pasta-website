@@ -1,0 +1,23 @@
+{% comment %} requires the following arguments: -settings {% endcomment %}
+
+<footer>
+    <div class="head">{{ settings.email_head }}</div>
+    <div class="social-media">
+        <ul>
+            <ul class="links">
+                <li><a class="link" href="{{ settings.first_link }}">{{ settings.first_link_text }}</a></li>
+                <li><a class="link" href="{{ settings.second_link }}">{{ settings.second_link_text }}</a></li>
+                <li><a class="link" href="{{ settings.third_link }}">{{ settings.third_link_text }}</a></li>
+                <li><a class="link" href="{{ settings.fourth_link }}">{{ settings.fourth_link_text }}</a></li>
+                <li><a class="link" href="{{ settings.fifth_link }}">{{ settings.fifth_link_text }}</a></li>
+                <li><a class="link" href="{{ settings.sixth_link }}">{{ settings.sixth_link_text }}</a></li>
+            </ul>
+        </ul>
+        <div class="follow">Follow us:</div>
+        <div class="social">
+            <a href="{{ settings.smi1url }}"><img src="{{ settings.smi1 | img_url: '30x' }}" alt=""></a>
+            <a href="{{ settings.smi2url }}"><img src="{{ settings.smi2 | img_url: '30x' }}" alt=""></a>
+            <a href="{{ settings.smi1url }}"><img src="{{ settings.smi3 | img_url: '30x' }}" alt=""></a>
+        </div>
+    </div>
+</footer>

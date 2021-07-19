@@ -1,0 +1,62 @@
+{% render 'footer' with  {
+    settings: section.settings
+  }%}
+  
+{% schema %}
+    {
+    "name": "Footer",
+    "settings": [
+        {
+            "type": "text",
+            "id": "email_head",
+            "label": "Footer Title"
+        },
+        {
+            "type": "image_picker",
+            "id": "smi1",
+            "label": "First Scoail Media Icon"
+        },
+        {
+            "type": "image_picker",
+            "id": "smi2",
+            "label": "Second Scoail Media Icon"
+        },
+        {
+            "type": "image_picker",
+            "id": "smi3",
+            "label": "Third Scoail Media Icon"
+        },
+        {
+            "type": "url",
+            "id": "smi1url",
+            "label": "First Scoail Media Icon URL"
+        },
+        {
+            "type": "url",
+            "id": "smi2url",
+            "label": "Second Scoail Media Icon URL"
+        },
+        {
+            "type": "url",
+            "id": "smi3url",
+            "label": "Third Scoail Media Icon URL"
+        },
+        {
+            "type": "text",
+            "id": "crb",
+            "label": "Copyright By"
+        },
+        {
+            "type": "url",
+            "id": "crburl",
+            "label": "Copyright Link"
+        }
+    ],
+    "presets": [
+    {
+        "name": "Hero",
+        "category": "Image w/ text"
+    }
+    ]
+    } 
+{% endschema %}

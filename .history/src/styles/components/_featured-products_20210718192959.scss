@@ -1,0 +1,43 @@
+.featured-products {
+    text-align: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 20px;
+    @include mq($screen-lg) {
+        padding: 75px 50px;
+    }
+    &__heading {
+        margin-bottom: 25px;
+        @include mq($screen-md) {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    }
+    &__items {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include mq($screen-lg) {
+            flex-wrap: nowrap;
+        }
+        .product-title {
+            margin-left: 15px;
+            margin-right: 15px;
+            @include mq($screen-sm) {
+                width: 46%;
+            }
+            @include mq($screen-lg) {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

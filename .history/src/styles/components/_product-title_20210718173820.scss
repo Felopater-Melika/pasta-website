@@ -1,0 +1,25 @@
+.product-title {
+    display: block;
+    margin-bottom: 25px;
+    @include mq($screen-lg) {
+        margin-bottom: 0px
+    }
+    &__image {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+    &__info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: 18px;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+    &__price {
+        font-size: 16px;
+    }
+}

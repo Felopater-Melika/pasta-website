@@ -1,0 +1,24 @@
+.featured-products {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    &__keading {}
+    &__items {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        .product-title {
+            margin-left: 15px;
+            margin-right: 15px;
+            width: 23%;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

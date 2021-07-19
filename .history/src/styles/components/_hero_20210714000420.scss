@@ -1,0 +1,6 @@
+.background {
+    width: 100vw;
+    height: 30vh;
+    position: fixed;
+    background-image: url("{{ settings.background | img_url: 'master' }}")
+}

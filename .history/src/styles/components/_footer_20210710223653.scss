@@ -1,0 +1,14 @@
+@import url(//db.onlinewebfonts.com/c/f7d1b2995a6dff7abcda304d226aa67d?family=HelveticaW01-Bold);
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .head {
+        text-align: center;
+        font-size: 22px;
+        color: white;
+        font-weight: 400;
+        font-family: HelveticaW01-Bold, sans-serif;
+    }
+}

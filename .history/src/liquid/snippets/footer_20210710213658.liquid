@@ -1,0 +1,16 @@
+{% comment %} requires the following arguments: -settings {% endcomment %}
+
+<footer>
+    <div class="head">{{ seetings.email_head }}</div>
+    <form class="email">
+        <div class="email-head">Enter your email here*</div>
+        <input type="email" name="enter-your email here*" id="input_comp-jutgpd7y" class="_3rh7f has-custom-focus" value="" placeholder="Email" required="" pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" tabindex="0"> <input type="submit" value="Submit">
+        <div class="social">
+            <div class="follow">Follow us:</div>
+            <a href="{{ seetings.smi1url }}"><img src="{{ seetings.smi1 }}" alt=""></a>
+            <a href="{{ seetings.smi2url }}"><img src="{{ seetings.smi2 }}" alt=""></a>
+            <a href="{{ seetings.smi1url }}"><img src="{{ seetings.smi3 }}" alt=""></a>
+        </div>
+        <div class="copyright">©2021 by <a href="{{ seetings.crb }}" target="_blank">{{ seetings.crburl }}</a></div>
+    </form>
+</footer>

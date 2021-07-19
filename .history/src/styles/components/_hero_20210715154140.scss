@@ -1,0 +1,31 @@
+@import url(//db.onlinewebfonts.com/c/6fcade7abbedc0b15b45d46f0b8eca84?family=CoquetteW00-Light);
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    .main-title {
+        font-family: 'CoquetteW00-Light', sans-serif;
+        font-size: 90px;
+        font-weight: 700;
+        color: black;
+        text-align: center;
+        width: 100%;
+    }
+    .sub-title {
+        font-family: 'Questrial', sans-serif;
+        font-size: 32px;
+        letter-spacing: 1.6px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+svg {
+    width: 2%;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+}

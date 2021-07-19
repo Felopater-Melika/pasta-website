@@ -1,0 +1,24 @@
+{% comment %} requires the following arguments: -settings {% endcomment %}
+
+<footer>
+    <div class="head">{{ settings.email_head }}</div>
+    <ul class="links">
+        <li><a class="link" href="{{ settings.foot_first_link }}">{{ settings.foot_first_link_text }}</a></li>
+        <li><a class="link" href="{{ settings.foot_second_link }}">{{ settings.foot_second_link_text }}</a></li>
+        <li><a class="link" href="{{ settings.foot_third_link }}">{{ settings.foot_third_link_text }}</a></li>
+        <li><a class="link" href="{{ settings.foot_fourth_link }}">{{ settings.foot_fourth_link_text }}</a></li>
+        <li><a class="link" href="{{ settings.foot_fifth_link }}">{{ settings.foot_fifth_link_text }}</a></li>
+        <li><a class="link" href="{{ settings.foot_sixth_link }}">{{ settings.foot_sixth_link_text }}</a></li>
+    </ul>
+    <div class="social-media">
+
+
+
+        <div class="follow">Follow us:</div>
+        <div class="social">
+            <a href="{{ settings.smi1url }}"><img src="{{ settings.smi1 | img_url: '30x' }}" alt=""></a>
+            <a href="{{ settings.smi2url }}"><img src="{{ settings.smi2 | img_url: '30x' }}" alt=""></a>
+            <a href="{{ settings.smi1url }}"><img src="{{ settings.smi3 | img_url: '30x' }}" alt=""></a>
+        </div>
+    </div>
+</footer>

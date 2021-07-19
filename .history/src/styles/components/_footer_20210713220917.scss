@@ -1,0 +1,67 @@
+@import url(//db.onlinewebfonts.com/c/f7d1b2995a6dff7abcda304d226aa67d?family=HelveticaW01-Bold);
+@import url(//db.onlinewebfonts.com/c/c5bd605b45237a12c99133fa9d7cae49?family=HelveticaW01-Roman);
+@import url(//db.onlinewebfonts.com/c/8e0a11eae887cf86084e98eb1dba2fc4?family=USALight);
+footer {
+    background-color: black;
+    height: 200px;
+    .head {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 22px;
+        color: white;
+        font-weight: 400;
+        font-family: HelveticaW01-Bold, sans-serif;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        .links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 120px;
+            li {
+                z-index: 2;
+                .link {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: USALight, sans-serif;
+                }
+            }
+        }
+        .social-media {
+            margin-bottom: 10px;
+            .follow {
+                color: white;
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 16px;
+                font-family: HelveticaW01-Roman, serif;
+            }
+            .social {
+                display: flex;
+                width: 170px;
+                align-items: center;
+                justify-content: space-evenly;
+                a {
+                    img {
+                        width: 42px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .spliter1,
+    .spliter2 {
+        display: none;
+    }
+}

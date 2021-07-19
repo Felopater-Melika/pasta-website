@@ -1,0 +1,9 @@
+<div class="product-title">
+    <img class="product-title__image" src="{{ product.featured_image | img_url: '100x' }}" alt="{{ product.featured_image.alt }}" />
+    <div class="product-title__info">
+        <a herf="{{ product.url }}" class="product-title__title">{{
+      product.title
+    }}</a>
+        <span class="product-title__price">{{ product.price | money }}</span>
+    </div>
+</div>

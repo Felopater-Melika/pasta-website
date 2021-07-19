@@ -1,0 +1,113 @@
+{% render 'footer' with  {
+    settings: section.settings,
+    id: section.id
+  }%}
+  
+{% schema %}
+    {
+    "name": "Footer",
+    "settings": [
+        {
+            "type": "text",
+            "id": "footer_header",
+            "label": "Footer Title"
+        },
+        {
+            "type": "image_picker",
+            "id": "smi1",
+            "label": "First Scoail Media Icon",
+            "info": "Dimensions: 30x30"
+        },
+        {
+            "type": "image_picker",
+            "id": "smi2",
+            "label": "Second Scoail Media Icon"
+        },
+        {
+            "type": "image_picker",
+            "id": "smi3",
+            "label": "Third Scoail Media Icon"
+        },
+        {
+            "type": "url",
+            "id": "smi1url",
+            "label": "First Scoail Media Icon URL"
+        },
+        {
+            "type": "url",
+            "id": "smi2url",
+            "label": "Second Scoail Media Icon URL"
+        },
+        {
+            "type": "url",
+            "id": "smi3url",
+            "label": "Third Scoail Media Icon URL"
+        },
+      {
+        "type": "url",
+        "id": "first_link",
+        "label": "First Link"
+      },
+      {
+        "type": "text",
+        "id": "first_link_text",
+        "label": "First Link Text"
+      },
+      {
+        "type": "url",
+        "id": "second_link",
+        "label": "Second Link"
+      },
+      {
+        "type": "text",
+        "id": "second_link_text",
+        "label": "Second Link Text"
+      },
+      {
+        "type": "url",
+        "id": "third_link",
+        "label": "Third Link"
+      },
+      {
+        "type": "text",
+        "id": "third_link",
+        "label": "Third Link Text"
+      },
+      {
+        "type": "url",
+        "id": "fourth_link",
+        "label": "Fourth Link"
+      },
+      {
+        "type": "text",
+        "id": "fourth_link_text",
+        "label": "Fourth Link Text"
+      },{
+        "type": "url",
+        "id": "fifth_link",
+        "label": "Fifth Link"
+      },
+      {
+        "type": "text",
+        "id": "fifth_link_text",
+        "label": "Fifth Link Text"
+      },
+      {
+        "type": "url",
+        "id": "sixth_link",
+        "label": "Sixth Link"
+      },
+      {
+        "type": "text",
+        "id": "sixth_link_text",
+        "label": "Sixth Link Text"
+      }
+    ],
+    "presets": [
+    {
+        "name": "Foot",
+        "category": "Image w/ text"
+    }
+    ]
+    } 
+{% endschema %}

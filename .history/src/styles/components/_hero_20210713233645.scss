@@ -1,0 +1,22 @@
+    section {
+        // position: relative;
+        .background {
+            height: 100vh;
+            width: 100vw;
+            background-image: url("{{ settings.background | img_url: 'master' }}");
+            // overflow: hidden;
+        }
+        // .titles {
+        // position: absolute;
+        // top: 50%;
+        // left: 50;
+        // transform: translate(-50%, -50%);
+        //     .main-title {
+        //         color: #fff
+        //     }
+        //     .sub-title {
+        //         color: #fff
+        //     }
+        // }
+        // }
+    }

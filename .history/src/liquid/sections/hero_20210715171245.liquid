@@ -1,0 +1,38 @@
+{% render 'hero' with  {
+    settings: section.settings,
+    id: section.id
+  }%}
+  
+{% schema %}
+    {
+    "name": "Hero",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "background",
+            "label": "Full Page Background"
+        },
+         {
+            "type": "image_picker",
+            "id": "mbackground",
+            "label": "Mobile Background"
+        },
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+        },
+        {
+            "type": "text",
+            "id": "sub_header",
+            "label": "Sub Header"
+        }
+    ],
+    "presets": [
+    {
+        "name": "Hero",
+        "category": "Image w/ text"
+    }
+    ]
+    } 
+{% endschema %}

@@ -1,0 +1,16 @@
+.product-title {
+    &__image {
+        max-width: 100%;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: 18px;
+    }
+    &__price {
+        font-size: 16px;
+    }
+}

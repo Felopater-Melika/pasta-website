@@ -1,0 +1,39 @@
+{% render 'hero' with  {
+    settings: section.settings,
+    id: section.id
+  }%}
+  
+{% schema %}
+    {
+    "name": "Footer",
+    "settings": [
+        
+        {
+            "type": "image_picker",
+            "id": "smi1",
+            "label": "First Scoail Media Icon",
+            "info": "Dimensions: 30x30"
+        },{
+            "type": "url",
+            "id": "smi3url",
+            "label": "Third Scoail Media Icon URL"
+        },
+        {
+            "type": "text",
+            "id": "crb",
+            "label": "Copyright By"
+        },
+        {
+            "type": "url",
+            "id": "crburl",
+            "label": "Copyright Link"
+        }
+    ],
+    "presets": [
+    {
+        "name": "Hero",
+        "category": "Image w/ text"
+    }
+    ]
+    } 
+{% endschema %}

@@ -1,0 +1,10 @@
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    .head {
+        text-align: center;
+        font-size: 40px;
+        color: white;
+    }
+}

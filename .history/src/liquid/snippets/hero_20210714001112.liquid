@@ -1,0 +1,14 @@
+<style>
+    .background {
+        background: url({{ settings.background | img_url: 'master' }}) repeat fixed 100%;
+        height: 100vh;
+    }
+</style>
+<section>
+    <div class="title background">
+        <div class="title">
+            <div class="main-title">{{ settings.header }}</div>
+            <div class="sub-title">{{ settings.sub_header }}</div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+{% comment %} requires the following arguments: -settings {% endcomment %}
+
+<footer>
+    <div class="head">{{ settings.email_head }}</div>
+    <form class="email">
+        <div class="email-head">Enter your email here*</div>
+        <input type="email" name="enter-your email here*" id="input_comp-jutgpd7y" class="_3rh7f has-custom-focus" value="" placeholder="Email" required="" pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" tabindex="0"> <input type="submit" value="Submit">
+    </form>
+    <div class="social-media">
+        <div class="follow">Follow us:</div>
+        <div class="social">
+            <a href="{{ settings.smi1url }}"><img src="{{ settings.smi1 | img_url: '30x' }}" alt=""></a>
+            <a href="{{ settings.smi2url }}"><img src="{{ settings.smi2 | img_url: '30x' }}" alt=""></a>
+            <a href="{{ settings.smi1url }}"><img src="{{ settings.smi3 | img_url: '30x' }}" alt=""></a>
+        </div>
+    </div>
+    <div class="copyright">©2021 by <a href="{{ settings.crburl }}" target="_blank">{{ settings.crb }}</a></div>
+
+</footer>

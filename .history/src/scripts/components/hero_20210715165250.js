@@ -1,0 +1,1 @@
+export const down = document.querySelector('svg');
