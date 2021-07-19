@@ -1,0 +1,19 @@
+<div class="collection">
+    <div class="collection__image-wrapper">\
+        <img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.image.alt }}" class="collection__image">
+    </div>
+    <div class="collection__wrapper">
+        <header class="collection__header">
+            <h1 class="collection__heading">{{ collection.title }}</h1>
+            <p class="collection__description">{{ collection.description }}</p>
+        </header>
+        {% paginate collection.products by 4%}
+        <div class="colleciton__grid">
+            {% for product in collection.products%} {% render 'product-title' with { product:product } %} {% endfor %}
+        </div>
+        <div class="collection__pagination">
+
+        </div>
+        {% endpaginate %}
+    </div>
+</div>

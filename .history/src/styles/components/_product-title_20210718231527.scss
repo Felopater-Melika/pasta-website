@@ -1,9 +1,9 @@
 .product-title {
-    display: block;
     background-color: black;
     margin-bottom: 25px;
-    width: 15%;
+    width: 70%;
     height: 200px;
+    align-self: center;
     @include mq($screen-lg) {
         margin-bottom: 0px
     }

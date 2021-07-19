@@ -1,0 +1,84 @@
+.collection {
+    &__image-wrapper {
+        display: block;
+        height: 30vw;
+        max-height: 500px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        @include mq($screen-md) {
+            display: none;
+        }
+    }
+    &__image {
+        left: 50%;
+        position: absolute;
+        max-width: 100%;
+        top: 50%;
+        transform: translate(-50%, -50%)
+    }
+    &__wrapper {
+        margin: auto;
+        max-width: 1200px;
+        padding: 50px;
+        @include mq($screen-lg) {
+            max-width: 700px;
+        }
+    }
+    &__header {
+        margin-bottom: 100px;
+    }
+    &__heading {
+        font-size: 2.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    &__description {
+        font-size: 1.4rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    &__grid {
+        display: grid;
+        grid-column-gap: 140px;
+        grid-row-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 100px;
+        align-content: center;
+        justify-content: space-evenly;
+        @include mq($screen-lg) {
+            grid-row-gap: 150px;
+            grid-column-gap: 150px;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 50px;
+        }
+        @include mq($screen-md) {
+            grid-column-gap: 50px;
+        }
+        @include mq($screen-sm) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__pagination {
+        padding: 20px;
+        text-align: center;
+        a,
+        span {
+            align-items: center;
+            color: black;
+            border-radius: 50%;
+            display: inline-flex;
+            height: 30px;
+            justify-content: center;
+            text-decoration: none;
+            width: 30px;
+        }
+        a:hover {
+            color: white;
+            background-color: black;
+            transition: 0.3s;
+        }
+        span {
+            color: white;
+            background-color: black;
+        }
+    }
+}

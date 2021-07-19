@@ -1,0 +1,50 @@
+<div class="collection">
+    {% if collections[section.settings.collection].image %}
+    <div class="collection__image-wrapper">\
+        <img src="{{ collections[section.settings.collection].image | img_url: 'master' }}" alt="{{ collections[section.settings.collection].image.alt }}" class="collection__image">
+    </div>
+    {% endif %}
+    <div class="collection__wrapper">
+    {% if collections[section.settings.collection].title %}
+        <header class="collection__header">
+            <h1 class="collection__heading">{{ collections[section.settings.collection].title }}</h1> 
+            {% if collections[section.settings.collection].description %}
+            <p class="collection__description">{{ collections[section.settings.collection].description }}</p>
+            {% endif %}
+        </header>
+        {% endif %}
+        {% paginate collections[section.settings.collection].products by 4 %}
+        <div class="collection__grid">
+            {% for product in collections[section.settings.collection].products %}
+             {% render 'product-title' with {
+                  product: product 
+                } %} 
+            {% endfor %}
+        </div>
+        <div class="collection__pagination">
+            {% for part in paginate.parts %}
+                {{ part.title | link_to: part.url }}
+            {% endfor %}    
+        </div>
+        {% endpaginate %}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Products Collection",
+    "settings":[
+    {
+        "type": "collection",
+        "id": "collection",
+        "label": "Collection"
+    }
+    ], 
+    "presets": [
+        {
+            "name": "Collection",
+            "category": "Products Display"
+        }
+    ]
+}
+{% endschema %}

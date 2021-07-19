@@ -1,10 +1,10 @@
-{% comment %} <section class="featured-products">
+<section class="featured-products">
     <h2 class="featured-products__heading">
-        {{ collections[section.settings.collection].title }}
+        {{ collections[section.settings.featured].title }}
     </h2>
 
     <div class="featured-products__items">
-        {% render 'product-title' for collections[section.settings.collection].products as product %}
+        {% render 'product-title' for collections[section.settings.featured].products as product %}
     </div>
 </section>
 
@@ -18,8 +18,8 @@
     "settings":[
     {
         "type": "collection",
-        "id": "collection",
-        "label": "Collections"
+        "id": "featured",
+        "label": "Featured"
     }
     ], 
     "presets": [
@@ -29,4 +29,4 @@
         }
     ]
 }
-{% endschema %} {% endcomment %}
+{% endschema %}

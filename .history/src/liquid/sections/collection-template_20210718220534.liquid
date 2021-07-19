@@ -1,0 +1,45 @@
+<div class="collection">
+    <div class="collection__image-wrapper">\
+        <img src="{{ settings.collection.image | img_url: 'master' }}" alt="{{ settings.collection.image.alt }}" class="collection__image">
+    </div>
+    <div class="collection__wrapper">
+        <header class="collection__header">
+            <h1 class="collection__heading">{{ settings.collection.title }}</h1>
+            <p class="collection__description">{{ settings.collection.description }}</p>
+        </header>
+        {% paginate collection.products by 1 %}
+        <div class="colleciton__grid">
+            {% for product in collection.products %}
+             {% render 'product-title' with {
+                  product: product 
+                } %} 
+            {% endfor %}
+            {% endpaginate %}
+        </div>
+        <div class="collection__pagination">
+            {% for part in paginate.parts %}
+                {{ part.title | link_to: part.url }}
+            {% endfor %}    
+        </div>
+        
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Products Collection",
+    "settings":[
+    {
+        "type": "collection",
+        "id": "collection",
+        "label": "Collection"
+    }
+    ], 
+    "presets": [
+        {
+            "name": "Collection",
+            "category": "Products Display"
+        }
+    ]
+}
+{% endschema %}
