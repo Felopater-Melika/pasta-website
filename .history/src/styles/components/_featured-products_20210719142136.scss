@@ -1,0 +1,21 @@
+.featured-products {
+    width: 100%;
+    &__image {}
+    &__wrapper {}
+    &__title {}
+    &__description {}
+    &__price {}
+    &__cart {}
+    &__image.first {}
+    &__wrapper.first {}
+    &__title.first {}
+    &__description.first {}
+    &__price.first {}
+    &__cart.first {}
+    &__image.second {}
+    &__wrapper.second {}
+    &__title.second {}
+    &__description.second {}
+    &__price.second {}
+    &__cart.second {}
+}

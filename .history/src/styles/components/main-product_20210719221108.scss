@@ -1,0 +1,15 @@
+.main-product {
+    &__image {
+        margin: auto;
+        width: 90%;
+    }
+    &__title {
+        font-size: 2.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 30px;
+        color: black;
+    }
+    &__description {}
+    &__price {}
+    &__cart {}
+}

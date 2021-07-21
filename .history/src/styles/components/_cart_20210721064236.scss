@@ -1,0 +1,15 @@
+.cart {
+    &__title {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+        margin-top: 30px;
+    }
+    &__items {}
+    &__block {}
+    &__details {}
+    &__total-text {}
+    &__total-price {}
+    &__update {}
+    &__checkout {}
+}

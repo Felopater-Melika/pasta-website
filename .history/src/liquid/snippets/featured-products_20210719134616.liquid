@@ -1,0 +1,8 @@
+<section class="featured-products">
+    <img src="{{ settings.fproduct.featured_image | img_url: 'master' }}" alt="{{settings.fproduct.featured_image.alt }}">
+    <div class="featured-products__wrapper">
+        <div class="featured-products__title">{{ settings.fproduct.title }}</div>
+        <div class="featured-products__description">{{ settings.fproduct.description }}</div>
+        <div class="featured-products__cart">{{ settings.fproduct.price | money }}</div>
+    </div>
+</section>

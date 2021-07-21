@@ -1,0 +1,9 @@
+<section class="main-product">
+    <img src="{{ settings.mproduct.featured_image | img_url: 'master'
+}}" alt="{{ settings.mproduct.featured_image.alt }}" class="main-product__image">
+    <div class="main-product__title">{{ settings.mproduct.title }}</div>
+    <div class="main-product__description">{{ settings.mproduct.description }}</div>
+    <div class="main-product__price">{{ settings.mproduct.price | money }}</div>
+    <div class="main-product__cart cart" product-id="{{ settings.mproduct.id }}" product-variant="{{ settings.mproduct.variant.id }}">{{ settings.mproduct.variant.id }}</div>
+   
+</section>

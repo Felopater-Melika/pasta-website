@@ -1,0 +1,8 @@
+<div class="cart">
+    <h1 class="cart__title">My Cart</h1>
+    <form class="cart__wrapper" action="/cart" method="post">
+        <div class="cart__items cart__block">
+            {% for line_item in cart.items %} {% render 'line-item', line_item: line_item %} {% endfor %}
+        </div>
+    </form>
+</div>

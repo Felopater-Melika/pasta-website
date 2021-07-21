@@ -1,0 +1,38 @@
+.featured-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    padding: 500px 0;
+    &__image {
+        // height: 300px;
+        // width: 650px;
+        height: 100%;
+        width: 100%;
+        padding: auto auto auto auto;
+    }
+    &__wrapper {}
+    &__title {}
+    &__description {}
+    &__price {}
+    &__cart {}
+    &__image.first {
+        // align-self: start;
+        padding-left: 50px;
+        background-color: white;
+    }
+    &__wrapper.first {}
+    &__title.first {}
+    &__description.first {}
+    &__price.first {}
+    &__cart.first {}
+    &__wrapper.second {}
+    &__title.second {}
+    &__description.second {}
+    &__price.second {}
+    &__cart.second {}
+    &__image.second {
+        // align-self: end;
+        padding-right: 50px;
+        background-color: black;
+    }
+}

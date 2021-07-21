@@ -1,0 +1,32 @@
+.featured-products {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    &__image {
+        height: 90%;
+        margin: auto;
+    }
+    &__wrapper {}
+    &__title {}
+    &__description {}
+    &__price {}
+    &__cart {}
+    &__image.first {
+        // align-self: start;
+    }
+    &__wrapper.first {}
+    &__title.first {}
+    &__description.first {}
+    &__price.first {}
+    &__cart.first {}
+    &__wrapper.second {}
+    &__title.second {}
+    &__description.second {}
+    &__price.second {}
+    &__cart.second {}
+    &__image.second {
+        // align-self: end;
+    }
+}

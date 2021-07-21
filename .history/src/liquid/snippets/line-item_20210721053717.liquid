@@ -1,0 +1,16 @@
+<div class="line-item">
+    <div class="line-item__left">
+        <div class="line-item__image-wrapper">
+            <img src="{{ line_item.image | img_url: 'master' }}" alt="{{ line_item.image.alt }}" class="line-item__image">
+        </div>
+        <div class="line-item__details">
+            <h2 class="line-item__title">{{ line_item.product.title }}</h2>
+            <div class="line-item__price">{{ line_item.final_line_price | money }}</div>
+            <div class="line-item__quantity">
+                <span class="line-item__quantity-text">Quantity:</span>
+                <input type="text" name="updates[]" size="4" id="updates_{{ line_item.id }}" value="{{ line_item.Quantity }}">
+            </div>
+        </div>
+    </div>
+
+</div>

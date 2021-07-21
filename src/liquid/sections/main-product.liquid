@@ -1,0 +1,23 @@
+{% render 'main-product' with  {
+    settings: section.settings,
+    id: section.id
+  }%}
+  
+{% schema %}
+{
+    "name": "Main products",
+    "settings":[
+    {
+        "type": "product",
+        "id": "mproduct",
+        "label": "Main Product"
+    }
+    ], 
+    "presets": [
+        {
+            "name": "Main Product",
+            "category": "Products Display"
+        }
+    ]
+}
+{% endschema %}

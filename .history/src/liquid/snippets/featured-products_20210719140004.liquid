@@ -1,0 +1,17 @@
+<section class="featured-products">
+    <img class="featured-products__image first" src="{{ settings.fproduct.featured_image | img_url: 'master' }}" alt="{{settings.fproduct.featured_image.alt }}">
+    <div class="featured-products__wrapper first">
+        <div class="featured-products__title first">{{ settings.fproduct.title }}</div>
+        <div class="featured-products__description first">{{ settings.fproduct.description }}</div>
+        <div class="featured-products__price first">{{ settings.fproduct.price | money }}</div>
+
+        <div class="featured-products__cart">add to cart</div>
+    </div>
+    <img class="featured-products__image second" src="{{ settings.sproduct.featured_image | img_url: 'master' }}" alt="{{settings.sproduct.featured_image.alt }}">
+    <div class="featured-products__wrapper second">
+        <div class="featured-products__title second">{{ settings.sproduct.title }}</div>
+        <div class="featured-products__description second">{{ settings.sproduct.description }}</div>
+        <div class="featured-products__price second">{{ settings.sproduct.price | money }}</div>
+        <div class="featured-products__cart">add to cart</div>
+    </div>
+</section>

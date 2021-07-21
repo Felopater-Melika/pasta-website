@@ -1,0 +1,50 @@
+.featured-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    height: 80%;
+    &__image {
+        height: 100%;
+        width: 100%;
+        padding: 50px 50px 50px 50px;
+    }
+    &__wrapper {
+        padding: 50px 50px 50px 50px;
+    }
+    &__title {
+        font-size: 2.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    &__description {
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    &__price {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+    }
+    &__cart {}
+    &__image.first {
+        padding-left: 50px;
+        background-color: white;
+    }
+    &__wrapper.first {
+        background-color: white;
+    }
+    &__title.first {}
+    &__description.first {}
+    &__price.first {}
+    &__cart.first {}
+    &__wrapper.second {
+        background-color: black;
+        color: white;
+    }
+    &__title.second {}
+    &__description.second {}
+    &__price.second {}
+    &__cart.second {}
+    &__image.second {
+        padding-right: 50px;
+        background-color: black;
+    }
+}

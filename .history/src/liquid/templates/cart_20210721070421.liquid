@@ -1,0 +1,18 @@
+<div class="cart">
+    <h1 class="cart__title">My Cart</h1>
+    <form class="cart__wrapper" action="/cart" method="post">
+        <div class="cart__items">
+            {% for line_item in cart.items %}
+                {% render 'line-item', line_item: line_item, index: forloop.index %}
+            {% endfor %}
+        </div>
+       <div class="cart__details">
+            <div class="cart__total">
+                <strong class="cart__total-text">Total:</strong>
+                <span class="cart__total-price">{{ cart.total_price | money }}</span>
+            </div>
+            <button class="cart__update" type="submit">Update Quantities</button>
+            <button class="cart__checkout" type="submit" name="checkout">Checkout</button>
+        </div>
+    </form>
+</div>

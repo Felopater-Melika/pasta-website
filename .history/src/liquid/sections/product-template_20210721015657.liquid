@@ -1,0 +1,25 @@
+<div class="product">
+    <section class="product__main">
+        <div class="product__images">
+            <img class="product__image" src="{{ product.featured_image | img_url: '100x' }}" alt="{{ product.featured_image.alt }}" />
+        </div>
+        <div class="product__details">
+            <div class="product__info">
+                <div class="product__title">{{ product.title }}</div>
+                <div class="product__description">{{ product.description }}</div>
+                <div class="product__price">{{ product.price | money }}</div>
+            </div>            
+            {% form 'product', product %}
+                <div>
+                    <label for="product-form-size">Size</label>
+                    <select id="product-form-size" name="id">
+                    {% for variants in product.variants %}
+                        <option value="{{ variant.id }}">{{ variant.title }}</option>
+                    {% endfor %}
+                    </select>
+                </div>
+                <button type="submit" style="margin-top: 100px">Add To Cart</button>
+            {% endform %}
+        </div>
+    </section>
+</div>

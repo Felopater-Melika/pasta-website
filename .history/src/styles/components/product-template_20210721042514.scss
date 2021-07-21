@@ -1,0 +1,54 @@
+.product {
+    &__main {
+        display: flex;
+    }
+    &__images {
+        width: 50vw;
+    }
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        padding: 50px;
+    }
+    &__details {
+        width: 50vw;
+        padding: 50px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 50px 50px 50px 50px;
+    }
+    &__title {
+        font-size: 2.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 30px;
+    }
+    &__description {
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 15px;
+    }
+    &__price {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+    }
+    &__submit {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        &:hover {
+            color: black;
+            background-color: white;
+            transition: 0.2s;
+        }
+    }
+}

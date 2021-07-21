@@ -1,0 +1,28 @@
+{% render 'hero' with  {
+    settings: section.settings,
+    id: section.id
+  }%}
+  
+{% schema %}
+{
+    "name": "Featured products",
+    "settings":[
+    {
+        "type": "url",
+        "id": "fproduct",
+        "label": "First Product"
+    },
+    {
+        "type": "url",
+        "id": "sproduct",
+        "label": "Second Product"
+    }
+    ], 
+    "presets": [
+        {
+            "name": "Featured products",
+            "category": "Products Display"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,11 @@
+.line-item {
+    display: flex;
+    &__left {
+        display: flex;
+    }
+    &__details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
